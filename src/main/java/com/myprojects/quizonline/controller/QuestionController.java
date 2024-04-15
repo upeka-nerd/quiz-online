@@ -28,7 +28,6 @@ public class QuestionController {
     public ResponseEntity<Question>createQuestion(@Validated @RequestBody Question question){
         Question savedQuestion = iquestionService.createQuestion(question);
         return ResponseEntity.status(CREATED).body(savedQuestion);
-
     }
 
     @GetMapping("/all")
