@@ -25,8 +25,7 @@ public class Question {
     @NotBlank
     private String questionType;
     @NotBlank
-    @ElementCollection             //used to map a collection of basic types or
-                                   // embeddable objects as an integral part of an owning entity.
+    @ElementCollection
     private List<String>choices;
     @NotBlank
     @ElementCollection
